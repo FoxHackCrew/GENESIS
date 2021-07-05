@@ -2,8 +2,7 @@
 import requests, random, datetime, sys, time, argparse, os
 from colorama import Fore, Back, Style
 import ctypes
-kernel32 = ctypes.windll.kernel32
-kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
+import colorama
 
 banner1 = """
 ╔═══════════════════════════════════════════════════════╗
